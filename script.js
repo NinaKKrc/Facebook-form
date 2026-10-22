@@ -19,6 +19,10 @@
 });*/
 document.addEventListener("DOMContentLoaded", function() {
    var fpassword = document.getElementById("forgot-password");
+   var caccount = document.getElementById("create-account");
+   var out = document.getElementById("back");
+   var out2 = document.getElementById("back2");
+   var out3 = document.getElementById("back3");
    var gselect = document.getElementById("drop1");
    var opcija = document.getElementById("drop2");
    var opcija2 = document.getElementById("drop3");
@@ -28,9 +32,36 @@ document.addEventListener("DOMContentLoaded", function() {
 		window.location.href="password.html";
 	});
 	
+	if(caccount)
+   caccount.addEventListener("click", function(event) {
+		window.location.href="singUp.html";
+	});
+	
+	if(out)
+   out.addEventListener("click", function(event) {
+		window.location.href="index.html";
+	});
+	
+	if(out2)
+   out2.addEventListener("click", function(event) {
+		window.location.href="index.html";
+	});
+	
+	if(out3)
+   out3.addEventListener("click", function(event) {
+		window.location.href="index.html";
+	});
+	
 	if(gselect)
 		drop1.addEventListener("change", function(event) {
 		
+		if(drop1.value == "c"){
+			opcija.classList.remove("hidden");
+			opcija2.classList.remove("hidden");
+		}else{
+			opcija.classList.add("hidden");
+			opcija2.classList.add("hidden");
+		}
 	});
 	
 	

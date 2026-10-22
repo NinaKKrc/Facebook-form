@@ -2,6 +2,8 @@ body{
 	font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
 }
 
+
+
 .vse {
     margin: 0 auto;
     display: grid;
@@ -151,4 +153,8 @@ select {
 .da {
 	display: flex;
     flex-direction: column;
+}
+
+.hidden{
+	display: none!important;
 }

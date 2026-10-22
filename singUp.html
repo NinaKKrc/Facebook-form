@@ -7,7 +7,7 @@
 </head>
 <body class="singUp">
 
-	<button type="submit" class="out"><a href="index.html" style="text-decoration: none;">&lt</a></button>
+	<button id="back" class="out">&lt</button>
 	
 	<img src="meta.png" alt="meta"  class="meta">
 	
@@ -18,29 +18,16 @@
 	<div class="d">
 		<h3>Name</h3>
 		<div class="da">
-			<p>First name</p> 
-			<input type="text" name="text" required>
+			<input type="text" name="text" placeholder="First name" required>
 		</div>
 		<div class="da">
-			<p>Last name</p>
-			<input type="text" name="text" required>
+			<input type="text" name="text" placeholder="Last name" required>
 		</div>
 	</div>
 	
 	<div class="d">
 		<h3>Birthday</h3>
-		<div class="da">
-			<p>Month</p> 
-			<input type="date" name="text" required>
-		</div>
-		<div class="da">
-			<p>Day</p>
-			<input type="date" name="text" required>
-		</div>
-		<div class="da">
-			<p>Year</p>
-			<input type="date" name="text" required>
-		</div>
+		<input type="date" name="text" required>
 	</div>
 	
 	<div class="polje">
@@ -51,27 +38,26 @@
 			<option value="m">Male</option>
 			<option value="c">Custom</option>
         </select>
-		<select name="spol" id="drop2" required>
-			<option value=""></option>       
+		<select name="spol" id="drop2" required class="hidden">
+			<option value="">Select your pronoun</option>       
 			<option value="f">She:"Wish her a happy birthday!"</option>
 			<option value="m">He:"Wish him a happy birthday!"</option>
 			<option value="c">They:"Wish them a happy birthday!"</option>
         </select>
 		<p>Your pronoun is visible to everyone</p>
-		<div class="da" id="drop3">
-			<p>Gender (optional)</p>
-			<input type="text" name="text">
+		<div class="da hidden" id="drop3">
+			<input type="text" name="text" placeholder="Gender (optional)">
 		</div>
     </div>
 	
 	<div class="polje">
 		<h3>Mobile number or email</h3> 
-		<input type="text" name="email" class="mail" required>
+		<input type="text" name="email" class="mail" placeholder="Mobile number or email"required>
 		<p>You may receive notifications from us.<a href="https://www.facebook.com/help/297947214257999/?helpref=uf_share" target="_blank">Learn why we ask for your contact information</a></p> 
 	</div>
 	<div class="polje">
 		<h3>Password</h3>
-		<input type="password" name="geslo" required>
+		<input type="password" name="geslo" placeholder="Password" required>
 	</div>
 	
 	<p>People who use our service may have uploaded your contact information to Facebook <a href="https://www.facebook.com/help/637205020878504" target="_blank">Learn more</a>.</p>
@@ -81,6 +67,6 @@
 	<p>The <a href="https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0" target="_blank">Privacy Policy</a> describes the ways we can use the information we collect when you create an account. For example, we use this information to provide, personalize and improve our products, including ads.</p>
 	
 	<button type="submit" class="b1">Submit</button>
-	<button type="submit" class="b4"><a href="index.html" style="text-decoration: none;">I already have an account</a></button>
+	<button id="back2" class="b4">I already have an account</button>
 </body>
 </html>
