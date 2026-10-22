@@ -1,0 +1,154 @@
+body{
+	font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+.vse {
+    margin: 0 auto;
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 100vh;
+}
+
+.levi {
+	/*width: 45%;*/
+	border-right: 2px solid #CCCCCC;
+	padding: 40px;
+}
+
+.logo {
+	width: 20%;
+	margin: 5%;
+}
+
+.slika1 {
+    width: 100%;
+}
+
+.levoBesedil {
+	font-size: 500%;
+}
+
+.desni {
+	/*width: 45%;*/
+	padding: 10%;
+}
+.metaPolje {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.meta {
+	width: 70px;
+	display: block;
+}
+
+button{
+	width: 90%;
+    height: 50px;
+	border-radius: 50px;
+}
+
+input{
+	border: 1px solid gray;
+	border-radius: 15px;
+    font-size: 14px;
+    box-sizing: border-box;
+	width: 60%;
+    height: 50px;
+}
+
+select {
+	border: 1px solid gray;
+	border-radius: 15px;
+    font-size: 14px;
+    box-sizing: border-box;
+	width: 60%;
+    height: 50px;
+}
+
+.b1 {
+	background-color: #3162d8;
+	border: 2px solid #3162d8;
+	color: white;
+}
+
+.b1:hover {
+    background-color: #2851A3;
+}
+
+.b2 {
+	background-color: white;
+	border: 2px solid white;
+	color: black;
+}
+
+.b2:hover {
+    background-color: #CCCCCC;
+}
+
+.b3 {
+	border: 2px solid #3162d8;
+	background-color: white;
+	color: #3162d8;
+	margin-top: 10%;
+}
+
+.b3:hover {
+    background-color: #CCCCCC;
+}
+
+.b4 {
+	background-color: #f3f4f5;
+	border: 2px solid white;
+	color: black;
+}
+
+.b4:hover {
+    background-color: #CCCCCC;
+}
+
+
+@media (max-width:1100px) {
+	.vse{
+		grid-template-columns: 1fr;
+		}
+	
+	.levi{
+		display:none;
+	}
+	
+}
+
+.out {
+    text-align: center;
+	background-color: white;
+	border: 2px solid white;
+	color: black;
+	width: 50px;
+    height: 50px;
+	font-size: 30px;
+	display: block;
+    margin-bottom: 10px;
+}
+
+.singUp {
+	margin: 5% 10%;
+}
+
+.out:hover {
+    background-color: #CCCCCC;
+}
+
+.d {
+	display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.da {
+	display: flex;
+    flex-direction: column;
+}
