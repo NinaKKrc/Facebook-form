@@ -51,6 +51,7 @@ button{
 	width: 90%;
     height: 50px;
 	border-radius: 50px;
+	margin-top: 10px;
 }
 
 input{
@@ -60,6 +61,7 @@ input{
     box-sizing: border-box;
 	width: 60%;
     height: 50px;
+	margin-top: 10px;
 }
 
 select {
@@ -69,6 +71,7 @@ select {
     box-sizing: border-box;
 	width: 60%;
     height: 50px;
+	margin-top: 10px;
 }
 
 .b1 {
@@ -137,6 +140,10 @@ select {
 }
 
 .singUp {
+	margin: 5% 10%;
+}
+
+.password {
 	margin: 5% 10%;
 }
 
