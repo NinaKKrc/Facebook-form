@@ -18,10 +18,23 @@
     }
 });*/
 document.addEventListener("DOMContentLoaded", function() {
+   var fpassword = document.getElementById("forgot-password");
+   var gselect = document.getElementById("drop1");
+   var opcija = document.getElementById("drop2");
+   var opcija2 = document.getElementById("drop3");
    
-   document.getElementById("forgot-password").addEventListener("click", function(event) {
+   if(fpassword)
+   fpassword.addEventListener("click", function(event) {
 		window.location.href="password.html";
 	});
+	
+	if(gselect)
+		drop1.addEventListener("change", function(event) {
+		
+	});
+	
+	
+	
 
 });
 
