@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
 	
 	let datum = new Date();
-	datum.setFullYear(datum.getFullYear() - 150);
+	datum.setFullYear(datum.getFullYear() - 117);
 
 	document.getElementById("datum").min =
     datum.toISOString().split("T")[0];
