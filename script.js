@@ -70,6 +70,19 @@ document.addEventListener("DOMContentLoaded", function() {
 	document.getElementById("datum").min =
     datum.toISOString().split("T")[0];
 	
+	const button = document.getElementById("loginBtn");
+	const toast = document.getElementById("toast");
+
+	button.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    toast.classList.add("show");
+
+    setTimeout(function() {
+        toast.classList.remove("show");
+    }, 3000);
+});
+	
 
 });
 
