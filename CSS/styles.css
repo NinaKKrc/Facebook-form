@@ -169,7 +169,7 @@ select {
 
 .singUp {
 	margin: 5% 30%;
-	
+	overflow-y: auto;
 }
 
 .password {
