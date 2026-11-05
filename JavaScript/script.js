@@ -65,9 +65,14 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
 	
 	let datum = new Date();
-	datum.setFullYear(datum.getFullYear() - 117);
+
+	let minDatum = new Date();
+	minDatum.setFullYear(minDatum.getFullYear() - 117);
 
 	document.getElementById("datum").min =
+    minDatum.toISOString().split("T")[0];
+
+	document.getElementById("datum").max =
     datum.toISOString().split("T")[0];
 	
 	const button = document.getElementById("loginBtn");

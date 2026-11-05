@@ -18,7 +18,7 @@ body{
 }
 
 .logo {
-	width: 20%;
+	width: 15%;
 	margin: 5%;
 }
 
@@ -76,6 +76,7 @@ select {
 	width: 100%;
     height: 50px;
 	margin-top: 10px;
+	background-color: white;
 }
 
 .b1 {
@@ -144,11 +145,12 @@ select {
 }
 
 .singUp {
-	margin: 5% 10%;
+	margin: 5% 30%;
+	
 }
 
 .password {
-	margin: 5% 10%;
+	margin: 5% 30%;
 }
 
 .out:hover {
