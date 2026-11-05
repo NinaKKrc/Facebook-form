@@ -68,27 +68,34 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	let minDatum = new Date();
 	minDatum.setFullYear(minDatum.getFullYear() - 117);
+	let poljeDatum = document.getElementById("datum");
 
-	document.getElementById("datum").min =
-    minDatum.toISOString().split("T")[0];
-
-	document.getElementById("datum").max =
-    datum.toISOString().split("T")[0];
+	if (poljeDatum) {
+		poljeDatum.min = minDatum.toISOString().split("T")[0];
+		poljeDatum.max = datum.toISOString().split("T")[0];
+	}
 	
+	const uporabnik = {
+    uporabniskoIme: "test",
+    geslo: "Test1234!"
+	};
+
 	const button = document.getElementById("loginBtn");
-	const toast = document.getElementById("toast");
 
-	button.addEventListener("click", function(event) {
-    event.preventDefault();
+	if (button) {
+		button.addEventListener("click", function() {
 
-    toast.classList.add("show");
+			let ime = document.getElementById("uporabniskoIme").value;
+			let geslo = document.getElementById("geslo").value;
 
-    setTimeout(function() {
-        toast.classList.remove("show");
-    }, 3000);
-});
-	
+			if (ime === uporabnik.uporabniskoIme && geslo === uporabnik.geslo) {
+				alert("Successful login!");
+			} else {
+				alert("Incorrect username or password!");
+			}
 
+		});
+	}
 });
 
 
