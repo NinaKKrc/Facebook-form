@@ -1,7 +1,5 @@
 # Facebook Form
 
-### Naloga – Facebook obrazec
-
 ## Opis projekta
 Pri tej nalogi sem izdelala spletni obrazec po vzoru Facebooka. Namen naloge je bil izdelati pregledno spletno stran z uporabo HTML, CSS in JavaScript.
 
