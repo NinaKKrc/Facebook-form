@@ -74,7 +74,10 @@ document.addEventListener("DOMContentLoaded", function() {
 		poljeDatum.min = minDatum.toISOString().split("T")[0];
 		poljeDatum.max = datum.toISOString().split("T")[0];
 	}
-	
+
+	function prikaziCredits() {
+    	alert("Credits\n\nIzdelala: Nina Katarina Krč\nProjekt: Facebook Form");
+	}
 	const uporabnik = {
     uporabniskoIme: "test",
     geslo: "Test1234!"
