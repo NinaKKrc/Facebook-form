@@ -78,6 +78,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	function prikaziCredits() {
     	alert("Credits\n\nIzdelala: Nina Katarina Krč\nProjekt: Facebook Form");
 	}
+	
 	const uporabnik = {
     uporabniskoIme: "test",
     geslo: "Test1234!"
